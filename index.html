@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="p-1 m-0 ">
+        <div class="row p-0 m-0" style="overflow: hidden">
+            <div class="p-0 m-0 borders">
+                <div class="col-md-12 fs-5 mb-2 d-flex justify-content-center align-items-center figure_border fw-bold">Паралелограм</div>
+                <div class="col-md-12 pt-2 pb-2 d-flex justify-content-center align-items-center ">
+                    <div class="paralelogram mb-2" id="paralelogram"></div>
+                </div>
+            </div>
+            <div class="col-md-12 borders">
+                <div class="row">
+                    <div class="col-md-1 mt-1">A:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="paralelogram_A" value="25"></div>
+                    <div class="col-md-1 mt-1">B:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="paralelogram_B" value="45"></div>
+                    <div class="col-md-1 mt-1">Angle:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="paralelogram_Angle" value="25"></div>
+                    <div class="col-md-1 mt-1">Area:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="paralelogram_Area" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">H:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="paralelogram_H" placeholder="-" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="overflow: hidden">
+            <div class="p-0 m-0 borders">
+                <div class="col-md-12 fs-5 mb-2 d-flex justify-content-center align-items-center figure_border fw-bold">Коло</div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="circle mb-2" id="circle"></div>
+                </div>
+            </div>
+            <div class="col-md-12 borders">
+                <div class="row">
+                    <div class="col-md-1 mt-1">R:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="circle_R" value="20"></div>
+                    <div class="col-md-1 mt-1">Area:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="circle_Area" placeholder="-" disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">L:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="circle_L" placeholder="-" disabled></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="overflow: hidden">
+            <div class="p-0 m-0 borders">
+                <div class="col-md-12 fs-5 mb-2 d-flex justify-content-center align-items-center figure_border fw-bold">Еліпс</div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="ellipse mb-2" id="ellipse"></div>
+                </div>
+            </div>
+            <div class="col-md-12 borders">
+                <div class="row">
+                    <div class="col-md-1 mt-1">Horizontal R:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="ellipse_Horizontal_r" value="30"></div>
+                    <div class="col-md-1 mt-1">Vertical R:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px"id="ellipse_Vertical_r" value="15"></div>
+                    <div class="col-md-1 mt-1">Area:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="ellipse_Area" placeholder="-" disabled></div>
+                    <div class="col-md-1 mt-1">L~:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="ellipse_L" placeholder="-" disabled></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="overflow: hidden">
+            <div class="p-0 m-0 borders">
+                <div class="col-md-12 fs-5 mb-2 d-flex justify-content-center align-items-center figure_border fw-bold">Квадрат</div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="square mb-2" id="square"></div>
+                </div>
+            </div>
+            <div class="col-md-12 borders">
+                <div class="row">
+                    <div class="col-md-1 mt-1">A:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="square_A" value="40"></div>
+                    <div class="col-md-1 mt-1">Diagonal:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="square_Diagonal" placeholder="-" disabled></div>
+                    <div class="col-md-1 mt-1">Area:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="square_Area" placeholder="-" disabled></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="overflow: hidden">
+            <div class="p-0 m-0 borders">
+                <div class="col-md-12 fs-5 mb-2 d-flex justify-content-center align-items-center figure_border fw-bold">Прямокутник</div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center ">
+                    <div class="rectangle mb-2" id="rectangle"></div>
+                </div>
+            </div>
+            <div class="col-md-12 borders">
+                <div class="row">
+                    <div class="col-md-1 mt-1">A:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="rectangle_A" value="30"></div>
+                    <div class="col-md-1 mt-1">B:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="rectangle_B" value="60"></div>
+                    <div class="col-md-1 mt-1">Diagonal:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="rectangle_Diagonal" placeholder="-" disabled></div>
+                    <div class="col-md-1 mt-1">Area:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="rectangle_Area" placeholder="-" disabled></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="overflow: hidden">
+            <div class="p-0 m-0 borders">
+                <div class="col-md-12 fs-5 mb-2 d-flex justify-content-center align-items-center figure_border fw-bold">Прямокутний трикутник</div>
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="right_triangle mb-2" id="right_triangle"></div>
+                </div>
+            </div>
+            <div class="col-md-12 borders">
+                <div class="row">
+                    <div class="col-md-1 mt-1">A:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_A" value="40"></div>
+                    <div class="col-md-1 mt-1">B:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_B" value="30"></div>
+                    <div class="col-md-1 mt-1"></div>
+                    <div class="col-md-3 mt-1"></div>
+                    <div class="col-md-1 mt-1">∠А:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_angle_A" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">∠B:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_angle_B" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">∠C:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_angle_C" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">Area:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_Area" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">H:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_H" placeholder="-" disabled>
+                    </div>
+                    <div class="col-md-1 mt-1">C:</div>
+                    <div class="col-md-3 mt-1"><input type="text" size="16px" id="right_triangle_C" placeholder="-" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-0 mt-2 d-flex justify-content-center">
+            <input type='submit' value='  ПРОВЕСТИ РОЗРАХУНКИ  ' onClick='start()'
+                style="background-color: rgb(52, 214, 73); font-size: 15px; font-weight: bold;" />
+        </div>
+    </div>
+</body>
+
+</html>

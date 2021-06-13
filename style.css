@@ -1,0 +1,53 @@
+.paralelogram {
+	width: 150px;
+	height: 100px;
+	transform: skew(-20deg);
+    background-color: steelblue;
+    border: 2px solid indigo;
+}
+.circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    background-color: steelblue;
+    border: 2px solid indigo;
+}
+.ellipse {
+    height: 100px;
+    width: 180px;
+    border-radius: 100%;
+    background-color: steelblue;
+    border: 2px solid indigo;
+}
+.square {
+	width: 120px;
+	height: 120px;
+    background-color: steelblue;
+    border: 2px solid indigo;
+}
+.rectangle {
+	width: 160px;
+	height: 80px;
+    background-color: steelblue;
+    border: 2px solid indigo;
+}
+
+.right_triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid steelblue;
+    border-right: 120px solid transparent;
+}
+.borders {
+    border: 1px solid black;
+}
+.figure_border{
+    border-bottom: 1px solid black;
+}
+span {
+    width: 100px;
+}
+.second_row{
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
